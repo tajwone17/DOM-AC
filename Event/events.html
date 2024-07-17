@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="handleClick()">Exploring Event</h1>
+    <button onclick="alert('do not click')"> Click me</button>
+    <script>
+        function handleClick() {
+            alert(45);
+        }
+    </script>
+    <button id="first">Click Me-1</button>
+    <button>Click Me-2</button>
+    <button>Click Me-3</button>
+    <button id="last">Click Me-4</button>
+    <script>
+        function onClick()
+        {
+            console.log('second person Clicked');
+            document.body.style.backgroundColor='red';
+            document.body.style.color='white';
+        }
+        // var firstButton = document.getElementById('first');
+        //  firstButton.onclick=onClick; 
+        document.getElementById('last').addEventListener('click',onClick);
+        
+    </script>
+</body>
+
+</html>

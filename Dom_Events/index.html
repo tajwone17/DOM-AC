@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css"></link>
+     <script src="script.js"></script>
+
+</head>
+
+<body>
+    <ul id="gift">
+        <li> item 1</li>
+        <li> item 2</li>
+        <li> item 3</li>
+    </ul>
+    <main>
+        <section>
+            <h3>Exploring DOM</h3>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad repellat, corrupti at quisquam sunt ab officiis quam ipsa distinctio reprehenderit magni eaque, minus, numquam non praesentium sint assumenda in.</p>
+            </article>
+            <article>
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Neque suscipit ab facere magni esse cupiditate porro dignissimos aut exercitationem vero pariatur rerum, velit labore et rem repellendus nihil, quas impedit iure. Pariatur eius explicabo fugiat earum deleniti odio?</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Inventore asperiores cumque culpa, saepe dignissimos quae odio molestiae commodi voluptatibus nihil praesentium tenetur repellat voluptas eum sapiente? Delectus tempore perspiciatis nisi cupiditate doloribus necessitatibus illo non corrupti dolores voluptas!</p>
+            </article> 
+               </section>
+    </main>
+    <div id="h1">
+        <h1>Hello World</h1>
+    </div>
+    <script>
+     
+        var h1=document.getElementById('h1');
+h1.style.backgroundColor='yellow';
+var authors=document.getElementsByClassName('author');
+
+for(var i=0;i<authors.length;i++)
+{
+    var element=authors[i];
+    console.log(element);
+    element.style.backgroundColor='lightblue';
+    element.innerHTML='Lekhok-'+i;
+    element.setAttribute('title','All are famous author');
+    
+}
+ const ul=document.getElementById('gift');
+ const li=document.createElement('li');
+ li.innerHTML='This is new gift';
+ ul.appendChild(li);
+   </script>
+</body>
+
+</html>
